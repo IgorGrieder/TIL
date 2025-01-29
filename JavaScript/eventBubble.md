@@ -10,7 +10,7 @@ Some events such as `focus`, `mouseenter`, `mouseleave` do not propagate. To see
 ## How does it work?
 
 To understand properly how the event propagation happens I will illustrate it better.
-Imagine the following HTML structure
+Imagine the following React structure
 
 ```tsx
 <div
@@ -43,7 +43,7 @@ There are three phases of event processing in JavaScript and although this artic
 2. Target - the event target is reached
 3. Bubbling - the event propagates up the DOM tree
 
-In the diagram above, we see how an event propagates from the innermost element (child) to the outermost element (parent) in the DOM tree.
+In the diagram below, we see how an event propagates from the innermost element (child) to the outermost element (parent) in the DOM tree.
 
 ![Bubble image](imgs/bubble.svg)
 
