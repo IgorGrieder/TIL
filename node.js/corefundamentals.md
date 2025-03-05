@@ -1,10 +1,12 @@
-# Node JS fundamentals
+# node.js fundamentals
 
 In this article, I will discuss some Node.js fundamentals that every
 beginner needs to know to improve the code quality of a Node-based web
 application.
 
-## NodeJS main components
+![node image](imgs/node.webp)
+
+## node.js main components
 
 - **Core JavaScript API**: Responsible for the high-level implementation.
 - **V8 Engine**: Responsible for interpreting JavaScript code and executing the program.
@@ -44,7 +46,7 @@ for high-demand CPU processing, allowing Node.js to act as a multi-threaded runt
 ## Event Loop
 
 Before introducing about the event loop we need to gather some extra concepts,
-`Call Stack` and the `Task Queue`.
+`Call Stack` and the `Callback/Task Queue`.
 
 ### Call Stack
 
@@ -54,21 +56,22 @@ can be expressed as a LIFO (Last in first out).
 It's important to know that `callbacks` in Node are just executed if the Call
 Stack is `empty`, without executing a particular function at the time.
 
-### Task Queue
+### Callback/Task Queue
 
-The task queue is used for example by `timers functions` such as the setTimeout
-that receives a `callback` and a `timer` for it to be executed. When call those
-types of functions they are registered in the Node's API timer queue and when the time of
-execution is reached the callback is inserted in the task queue for execution.
-Since a queue is a `FIFO` (First in frist out) data structure they callbacks will
+Its job is to storage, in a queue, all the callbacks to be executed by the program.
+The execution of the queue's tasks will only start when the `Call Stack is
+free`.
+Since a queue is a `FIFO` (First in first out) data structure the callbacks will
 be executed in insertion order.
 
 ### Understanding the Event Loop
 
 The `Event Loop` is fundamental for the node js runtime since it makes possible
-for the non-blocking I/0 strcuture of the language work. It's responsible for
+for the non-blocking I/0 structure of the language work. It's responsible for
 making node application really good with reading files, processing http requests
 and querying databases.
+
+![Event Loop](imgs/EVentLoppIMage.png)
 
 ### Event Loop Phases
 
@@ -93,14 +96,14 @@ can have `blocking` and `non-blocking` calls. By understanding how the
 
 ### Blocking calls
 
-We say we have a blocking call when a non JavaScript NodeJS code is being
+We say we have a blocking call when a non JavaScript node.js code is being
 executed and it will not allow any other process to be executed until it finishes.
 This behavior pauses the execution of the `Event Loop` since it can't continue
 to execute any process.
 
 _Note_: High intense CPU performance process aren't considered blocking calls
 
-#### Example from the Node JS Documentation
+#### Example from the node.js Documentation
 
 ```JavaScript
 const fs = require('node:fs');
@@ -158,11 +161,12 @@ Data received: { ... }
 ```
 
 This happens because when a Promise is returned by the fetch method it will stop
-the execution of the function until it resolves the promise but because the
-`Event Loop` isn't blocked it will continue to executed the code normally and
+the execution of the function until it resolves the promise, but because the
+`Event Loop` isn't blocked, it will continue to executed the code normally and
 when the promise is resolved it will scheduled to continue the function
-execution
-Really understaing this behavior is key for developing JavaScript Node JS code
+execution as a second priority before changing an `Event Loop Phase`.
+
+Really understanding this behavior is key for developing JavaScript node.js code
 without any unexpected behavior.
 
 ## Conclusion
@@ -170,4 +174,10 @@ without any unexpected behavior.
 In this article, we covered many core concepts of Node.js that
 beginners often overlook at the start of their journey. However, understanding
 these concepts is crucial for writing efficient and scalable applications.
-F
+Feel free to leave any observations or questions in the comments section below!
+
+### References
+
+- [Node.js Official Documentation on the Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
+- [GeeksforGeeks: Node.js Event Loop](https://www.geeksforgeeks.org/node-js-event-loop/)
+- [Philip Roberts: What the Heck is the Event Loop? (Video)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
