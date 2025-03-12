@@ -2,10 +2,10 @@
 
 When making an import in node it will do the following:
 
-1. Run all sync code in the file imported
-2. Set a reference in the memory for the file functions
+1. Run all sync code in the files imported by the class
+2. Set a reference in the memory for each file functions, variables and classes
 
-This behavior can lead to some easy to fix errors
+Because of this import hoisting this behavior can lead to some easy to fix errors
 
 ## Example
 
@@ -31,4 +31,5 @@ import DB from "./database/config.js"
 
 ```JavaScript
 const url = process.env.URL // would return undefined
+`
 ```
