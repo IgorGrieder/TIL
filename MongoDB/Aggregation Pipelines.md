@@ -5,7 +5,7 @@ steps into our aggregation process.
 
 ## Example
 
-![[Pasted image 20250316175711.png]]
+![image](imgs/Pasted image 20250316175711.png)
 
 The order of grouping and matching does matter, aggregate accepts a array of
 objects so we must take into consideration.
