@@ -1,12 +1,12 @@
 # Load Balancers
 
-[[vertical and horizontal scaling|Horizontal Scaling strategy]] for balancing servers operations.
+Horizontal Scaling strategy for balancing servers operations.
 
 The load balancer doesn't do any real work, it just centralizes and sends the
 processing work to other server when it arrives. It only routes the requests
 into server/client.
 
-![image](imgs/Pasted image 20250315172545.png)
+![image](imgs/Pasted%20image%2020250315172545.png)
 
 In this strategy the load balancer will always send the processing for a server
 that has CPU not being used for any processing.
