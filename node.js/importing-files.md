@@ -31,5 +31,4 @@ import DB from "./database/config.js"
 
 ```JavaScript
 const url = process.env.URL // would return undefined
-`
 ```

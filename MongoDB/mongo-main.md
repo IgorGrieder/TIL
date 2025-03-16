@@ -15,6 +15,9 @@ In mongo a namespace is a group of collections that have documents.
 
 ## Topics
 
-- [[Query]]
-- [[Scaling in MongoDB]]
-- [[ACID in MongoDB]]
+- [Query](https://github.com/IgorGrieder/TIL/blob/main/MongoDB/Query.md)
+- [Scaling in
+  MongoDB](https://github.com/IgorGrieder/TIL/blob/main/MongoDB/Scaling%20in%20MongoDB.md)
+- [ACID in MongoDB](https://github.com/IgorGrieder/TIL/blob/main/MongoDB/ACID%20in%20MongoDB.md)
+- [Linking vs embedding](https://github.com/IgorGrieder/TIL/blob/main/MongoDB/Linking%20vs%20embedding.md)
+- [Aggregation Pipelines](https://github.com/IgorGrieder/TIL/blob/main/MongoDB/Aggregation%20Pipelines.md)
