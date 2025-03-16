@@ -6,7 +6,7 @@
   using the ObjectID from another collection.
 - If the embedded data is updated a lot.
 
-![image](imgs/Pasted image 20250316174707.png)
+![image](imgs/Pasted%20image%2020250316174707.png)
 
 ## Embedding
 
