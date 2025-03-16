@@ -13,7 +13,7 @@ occurs nothing will be completed.
 
 ### Example
 
-![image](imgs/Pasted image 20250316172645.png)
+![image](imgs/Pasted%20image%2020250316172645.png)
 
 ## C -> Consistency
 
