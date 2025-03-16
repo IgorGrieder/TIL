@@ -30,3 +30,6 @@ docker run -d -p 80:80 docker/getting-started:latest
 - [[networks with docker|Networks]]
 - [[load balancers docker|Load Balancers]]
 - [[vertical and horizontal scaling]]
+- [[building images]]
+- [[docker-compose]]
+- [[running a server]]
