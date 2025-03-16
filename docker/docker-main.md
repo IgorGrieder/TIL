@@ -23,13 +23,13 @@ docker run -d -p 80:80 docker/getting-started:latest
 
 ## Topics
 
-- [[container]]
-- [[commands]]
-- [[images]]
-- [[statefullness]]
-- [[networks with docker|Networks]]
-- [[load balancers docker|Load Balancers]]
-- [[vertical and horizontal scaling]]
-- [[building images]]
-- [[docker-compose]]
-- [[running a server]]
+- [container](https://github.com/IgorGrieder/TIL/blob/main/docker/container.md)
+- [commands](https://github.com/IgorGrieder/TIL/blob/main/docker/commands.md)
+- [images](https://github.com/IgorGrieder/TIL/blob/main/docker/images.md)
+- [statefullness](https://github.com/IgorGrieder/TIL/blob/main/docker/statefullness.md)
+- [networks with docker](https://github.com/IgorGrieder/TIL/blob/main/docker/networks%20with%20docker.md)
+- [load balancers docker](https://github.com/IgorGrieder/TIL/blob/main/docker/load%20balancers%20docker.md)
+- [vertical and horizontal scaling](https://github.com/IgorGrieder/TIL/blob/main/docker/vertical%20and%20horizontal%20scaling.md)
+- [building images](https://github.com/IgorGrieder/TIL/blob/main/docker/building%20images.md)
+- [docker-compose](https://github.com/IgorGrieder/TIL/blob/main/docker/docker-compose.md)
+- [running a server](https://github.com/IgorGrieder/TIL/blob/main/docker/running%20a%20server.md)
