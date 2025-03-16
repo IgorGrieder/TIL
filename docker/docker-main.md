@@ -9,7 +9,7 @@ container, that can be thought like a lightweight VM.
 
 Server that actually runs a process in the OS
 
-![[Pasted image 20250315111347.png]]
+![image](imgs/Pasted image 20250315111347.png)
 
 ## Getting Started image
 

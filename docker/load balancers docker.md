@@ -6,14 +6,14 @@ The load balancer doesn't do any real work, it just centralizes and sends the
 processing work to other server when it arrives. It only routes the requests
 into server/client.
 
-![[Pasted image 20250315172545.png]]
+![image](imgs/Pasted image 20250315172545.png)
 
 In this strategy the load balancer will always send the processing for a server
 that has CPU not being used for any processing.
 
 ## How to configure a load balancer in docker
 
-We have introduced in [[networks with docker]] how to create a network, a custom
+We have introduced in networks with docker how to create a network, a custom
 bridge to connect containers to it, now we will use `Caddy` to implement a load
 balancer.
 

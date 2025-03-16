@@ -16,4 +16,4 @@ containers think they have full access to the OS but for most part they use a pi
 
 Each running container has a `namespace` in the OS.
 
-![[Pasted image 20250315110811.png]]
+![image](imgs/Pasted image 20250315110811.png)
