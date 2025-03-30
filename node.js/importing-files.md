@@ -1,7 +1,9 @@
 # Module imports in node.js
 
-Imports and modules are a big part of developing web application in node.js, and
-sometimes we can mess up some pretty simple imports.
+Imports in general are one of the most basic programming language features.
+Most of the languages support it for us to follow the DRY (don't repeat yourself) principle.
+Particularly in developing web applications in node.js sometimes we can make mistakes
+about some pretty simples imports, and that's going to be covered in this short article.
 
 ## Understanding how imports work
 
