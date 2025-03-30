@@ -1,21 +1,20 @@
 # Module imports in node.js
 
-Imports in general are one of the most basic programming language features.
-Most of the languages support it for us to follow the DRY (don't repeat yourself) principle.
-Particularly in developing web applications in node.js sometimes we can make mistakes
-about some pretty simples imports, and that's going to be covered in this short article.
+Imports in general are one of the most basic programming language features. Most of the languages support it for us to follow the DRY (don't repeat yourself) principle.
+
+Particularly in developing web applications in node.js, we can sometimes make mistakes about simple imports, and that's going to be covered in this short article.
 
 ## Understanding how imports work
 
-1. First, node will hoist all imports in the files, regardless of they're position in
-   the code. It's called the `parsing phase`.
+1. First, node will hoist all imports on a file, regardless of they're position in
+   the codebase, for all files, follwoing the import flow. It's called the `parsing phase`.
 2. After that it will have built a `dependency graph` and will execute the code
    in the order it was defined. The graph is not necessarily the order of the imports of the
    files.
 
 ## Circular dependency
 
-Because of import hoisting this behavior can lead to some `circular dependencies`
+Because of import hoisting we can come across the `circular dependencies`
 problem. This often happens when we try to access a exported module declared in a module
 that depends on the main module. I know that sounded a little bit hard to
 understand, but I will clear this out.
@@ -23,7 +22,7 @@ understand, but I will clear this out.
 ![drawing of circular dependency](imgs/circular.png)
 
 In this example `index.js` exports a database connection URL to be used in the
-`db.js` file and the main module itself utilizes the database connection
+`db.js` file and the main module itself utilizes the `database connection`
 established in the db.js file. This clearly creates a circular dependency flow between
 them and this causes an error of use before initialization of `DBURL variable`.
 
@@ -37,7 +36,8 @@ configuration files. This example was just purely designed for a simple explanat
 ## Config files
 
 `Configuration files` are the main solution for this module importing confusion.
-A most appropriate example of the usage of a config file would be the following one.
+A most appropriate example of a config file usage would be the following one.
+
 In this example, a AWS S3 connection is being established and it will be used by
 our main module `index.js` and inside a get request `route.js`.
 
@@ -76,8 +76,8 @@ export default router;
 
 ### Quick fix
 
-We could just start the S3 connection in a configuration file and import it
-when the module usage is required, solving our problem.
+We could just have started the S3 connection in a configuration file and import it
+when the module is required for some operation, solving our problem.
 
 ```JavaScript
 // s3.js
