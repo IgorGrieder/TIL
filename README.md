@@ -12,3 +12,4 @@ The ideia behind this repository is to #LearnInPublic
 - [Java](https://github.com/IgorGrieder/TIL/blob/main/Java/main-java.md)
 - [Docker](https://github.com/IgorGrieder/TIL/blob/main/docker/docker-main.md)
 - [Mongo DB](https://github.com/IgorGrieder/TIL/blob/main/MongoDB/mongo-main.md)
+- [Go](https://github.com/IgorGrieder/TIL/blob/main/Go/main-go.md)
