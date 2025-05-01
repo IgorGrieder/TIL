@@ -53,3 +53,17 @@ We can track if a channel is closed or not by a second return from the channel.
 v, ok := <-channel
 // Ok will be a boolean if the channel is open or not
 ```
+
+## Iterating in a channel
+
+We can iterate in a channel and if it's closed we stop so.
+
+```Go
+// Imagine a go routine populates the channel
+ch := make(chan int, 5)
+
+for value := range ch{
+  // This for will be working until the channel is closed
+  fmt.Printf(value)
+}
+```
