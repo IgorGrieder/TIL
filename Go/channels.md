@@ -42,3 +42,14 @@ func main(){
 
 }
 ```
+
+## Closing Channels
+
+We can close a channel using the `close()` method. This must only be done by the sender perspective, never the receiver since it's go routine doesn't know when the channels is not going to be used anymore.
+
+We can track if a channel is closed or not by a second return from the channel.
+
+```Go
+v, ok := <-channel
+// Ok will be a boolean if the channel is open or not
+```
