@@ -35,7 +35,7 @@ func main(){
   ch := make(chan int, 3)
 
   go func(ch chan int){
-    for i range 10 {
+    for i := range 10 {
       ch<-i
     }
   }(ch)
