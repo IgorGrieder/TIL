@@ -9,3 +9,5 @@ Main file to centralize `Go Learnings!`
 - [Binaries](https://github.com/IgorGrieder/TIL/blob/main/Go/binaries-in-go.md)
 - [Channels](https://github.com/IgorGrieder/TIL/blob/main/Go/channels.md)
 - [Mutexes](https://github.com/IgorGrieder/TIL/blob/main/Go/mutexes-in-go.md)
+- [Go routines](https://github.com/IgorGrieder/TIL/blob/main/Go/go-routines.md)
+- [HTTP Server](https://github.com/IgorGrieder/TIL/blob/main/Go/http-server.md)
