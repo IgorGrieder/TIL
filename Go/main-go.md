@@ -12,3 +12,4 @@ Main file to centralize `Go Learnings!`
 - [Go routines](https://github.com/IgorGrieder/TIL/blob/main/Go/go-routines.md)
 - [HTTP Server](https://github.com/IgorGrieder/TIL/blob/main/Go/http-server.md)
 - [Adapters](https://github.com/IgorGrieder/TIL/blob/main/Go/adapters-go.md)
+- [Strcuts](https://github.com/IgorGrieder/TIL/blob/main/Go/struct-composition.md)
