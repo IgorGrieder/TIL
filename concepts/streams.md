@@ -16,4 +16,4 @@ This metaphor actually explain in a simple way what my implementation was doing.
 
 ## Conclusion
 
-Sometimes we tend not to think about memory in general, but in controlled environments it is always crucial to understand what would happen when scale hits. If you have anything to comment about it or you would like to share ideas about the topic leave a comment!
+Sometimes we tend not to think about memory in general, but in controlled environments it is always crucial to understand what would happen when scale hits. If you have anything to comment about it or you would like to share ideas about the topic leave a comment below!
