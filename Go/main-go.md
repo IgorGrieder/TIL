@@ -12,4 +12,9 @@ Main file to centralize `Go Learnings!`
 - [Go routines](https://github.com/IgorGrieder/TIL/blob/main/Go/go-routines.md)
 - [HTTP Server](https://github.com/IgorGrieder/TIL/blob/main/Go/http-server.md)
 - [Adapters](https://github.com/IgorGrieder/TIL/blob/main/Go/adapters-go.md)
-- [Strcuts](https://github.com/IgorGrieder/TIL/blob/main/Go/struct-composition.md)
+- [Structs](https://github.com/IgorGrieder/TIL/blob/main/Go/struct-composition.md)
+
+## Read material
+
+- [Uber Style](https://github.com/uber-go/guide/blob/master/style.md)
+- [Patterns](https://marcelsud.me/esvaziando-a-mochila-com-a-linguagem-go/)
